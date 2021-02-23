@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf');
+}
+$secondary: #ffffff;
+$primary:   #999999;
+$red-color-text: #cc3333;
+$services-gray-text: #666666;
+$milk-background: #fffaf4;
+$primary-font: 'Montserrat';
+$secondary-font: 'RobotoSlab';
+$bold-font: 'MontserratBold';
+
+
+
+html, body  {
+    width: 100%;
+    height: 100%; 
+}
+body {
+   main {
+        background: url(../img/background.jpg) center no-repeat;
+        background-size: cover;
+    } 
+    .navbar-dark .navbar-nav .nav-link {
+        color: $secondary;
+    }
+    .navbar-nav li.active > .nav-link {
+        color: $primary;
+    }
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+        color: $primary;
+    }
+    .collapse.navbar-collapse ul{
+        margin: 28px 90px 0 auto;
+     }
+     a.navbar-brand{
+        font-family: $bold-font;
+        font-size: 2em;
+        margin: 18px 0 0 60px;
+    }
+    a.nav-link {
+        font-family: $primary-font;
+        font-size: 1.1em;
+        padding: 0;
+        margin-right: 10px;
+    }
+    header {
+        margin-top: 190px;
+    }
+    h1.header-text, p.paragraph-text {
+        color: $secondary;
+        font-family: $secondary-font;
+    }
+    p.paragraph-text{
+        margin-top: 25px;
+    }
+    a.btn.btn-light {
+        font-family: $primary-font;
+        font-size: 1.2em;
+        color: $red-color-text;
+        align-self: center;
+        margin: 40px 0 190px 0;
+    }
+    .title {
+        text-align: center;
+        overflow: hidden;
+        h4 {
+            display: block;
+            font-size: 1.6em;
+            text-transform: uppercase;
+            margin-top: 90px;
+            font-family: $primary-font;
+        }
+        p {
+            font-size: 1.4em;
+            font-family: $secondary-font;
+        }
+        .line {
+            width: 60px;
+            height: 4px;
+            border: none;
+            margin: 25px auto 30px auto;
+            background-color: $services-gray-text;
+        }
+    }
+    .services {
+        .row.items {
+            display: flex;
+            margin-top: 60px;
+            padding-bottom: 100px;
+        }
+    }
+  
+    .title > h4, .line, .head-paragraph{
+        color: $services-gray-text;
+    }
+    .title > .head-paragraph {
+        font-family: $secondary-font;
+        font-size: 1.2em;
+    }
+    .item > h6, p {
+        color: $services-gray-text;
+    }
+    .item {
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        transition: all 0.5s;
+        img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h6 {
+            text-align: center;
+            font-family: $primary-font;
+            font-size: 1.2em;
+            padding-top: 27px;
+            padding-bottom: 18px;
+            margin: 0;
+        }
+        p {
+            font-family: $secondary-font;
+            font-size: 1.1em;
+            text-align: center;
+            line-height: 20px;
+        }
+        &:hover {
+            transform: scale(1.1);
+            img {
+                transform: scale(1.0); 
+            }
+            h6 {
+                transform: scale(1.0);  
+            }
+            p{
+                transform: scale(0.9); 
+            }
+        }
+    }
+    .wrap {
+        background-color: $milk-background;
+       .article {
+           padding-bottom: 20px;
+           margin: 46px 0 30px 0;
+       }
+       .row.items {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        }
+    }
+    .wrap.gallery {
+        background-color: $secondary;
+    } 
+    .nav-menu > nav.navbar.navbar-expand-lg.navbar-light > .navbar-nav li.active > .nav-link {
+        color: $red-color-text;
+    }
+    .nav-menu {
+        font-family: $secondary-font;
+        font-size: 1.1em;
+        .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+            color: $red-color-text;
+        }
+    }
+    .container.gallery {
+        margin-bottom: 70px;
+        .brand {
+            margin-bottom: 24px;
+        }
+    }
+    .wrap.contacts {
+         background: url(../img/redshadow.png) center no-repeat, 
+                     url(../img/touchin.png) center no-repeat;
+        background-size: cover;
+    }
+    .title h5 {
+        display: block;
+        color: $secondary;
+        font-size: 2.35em;
+        margin-top: 125px;
+        font-family: $primary-font;
+    }
+    a.btn.btn-outline-light {
+        font-family: $primary-font;
+        font-size: 1.2em;
+        color: $secondary;
+        align-self: center;
+        margin: 50px 0 125px 0;
+        &:hover {
+            color: $red-color-text;
+        }
+    }
+    h5.head-post {
+        margin-top: 10px;
+        font-family: $primary-font;
+        font-size: 1.2em;
+        color: $services-gray-text;
+        &:hover {
+            color: $red-color-text;
+        }
+    }
+    .date {
+        float: left;
+        margin: 0 0 10px 10px;
+    }
+    .date img{
+        float: left;
+        margin-right: 20px;
+    }
+    .line.long {
+        margin: 30px 0 30px 0;
+    }
+    .info-post {
+        float: left;
+        margin-left: 10px;
+    }
+    p.hovered {
+        display: contents;
+        &:hover {
+        span.hover-red {
+            color: $red-color-text; 
+            } 
+        }
+    }
+    h6.more-info {
+        color: $primary;
+        &:hover {
+            color: $red-color-text; 
+        }
+    }
+    .second-post {
+        margin-bottom: 90px;
+    }
+    .row.brands {
+        padding: 100px 0 0 20px;
+        margin-bottom: 50px;
+    }
+    .head-paragraph.signature {
+        font-size: 0.85em;
+        padding-bottom: 15px;
+    }
+    .title.review {
+        margin-bottom: 100px;
+    }
+    .title.contact {
+        margin-bottom: 20px;
+    }
+    .form-row {
+        margin-bottom: 100px;
+        input, textarea {
+            outline: none;
+            &:focus, :active {
+                border-color: $red-color-text;
+                box-shadow: none;
+            }
+        }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    }
+    }
+    button.submit-form {
+        margin-top: 20px;
+    }
+    p.contacts {
+        padding-top: 10px;
+    }
+    .our-contact {
+        margin-top: 20px;
+        font-size: 1em;
+        font-family: $secondary-font;
+    }
+    i.fa-lg {
+        margin-right: 10px;
+    }
+    span.info {
+        color: $services-gray-text;
+        font-family: $secondary-font;
+    }
+    footer {
+        background-color: $red-color-text;
+        hr.li-footer {
+            color: $secondary;
+            background-color: $secondary;
+            border: none;
+            width: 80px;
+            height: 4px;
+            margin: 40px auto 40px auto;
+        }
+        p.footer-signature {
+            margin-bottom: 90px;
+            font-size: 1em;
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            text-align: center;
+            color: $secondary;
+        }
+        .social-icons {
+            margin-top: 90px;
+            color: $secondary;
+            font-family: $secondary-font;
+            span {
+                margin-right: 10px;
+                &:hover{
+                    color: $primary;
+                }
+            }
+            a.link{
+                color: $secondary;
+                text-decoration: none;
+                &:visited {
+                    text-decoration: none;  
+                }
+            }
+        }
+    }
+}
